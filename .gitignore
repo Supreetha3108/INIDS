@@ -3,3 +3,8 @@ __pycache__/
 .env
 dataset/raw/Friday.csv.csv
 dataset/
+dataset/
+*.csv
+dataset/raw/
+dataset/processed/
+*.csv
