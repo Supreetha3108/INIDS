@@ -1,0 +1,7 @@
+Label encoding:
+BENIGN → normal
+All other attack classes → attack
+
+Preprocessing:
+StandardScaler used for all features.
+No manual categorical encoding.
