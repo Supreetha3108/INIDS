@@ -12,6 +12,8 @@ print("➡️ Loading processed dataset...")
 df = pd.read_csv("dataset/processed/final_data.csv")
 
 X = df.drop("Label", axis=1)
+print(list(X.columns))
+exit()
 y = df["Label"]
 
 print("Dataset shape:", df.shape)
