@@ -13,7 +13,7 @@ df = pd.read_csv("dataset/processed/final_data.csv")
 
 X = df.drop("Label", axis=1)
 print(list(X.columns))
-exit()
+
 y = df["Label"]
 
 print("Dataset shape:", df.shape)
@@ -38,6 +38,10 @@ print("➡️ Training Random Forest model...")
 model.fit(X_train, y_train)
 
 print("✅ Training completed")
+print("Training accuracy:",model.score(X_train,y_train))
+print("Training accuracy:",model.score(X_test,y_test))
+
+
 
 # Predictions
 y_pred = model.predict(X_test)
